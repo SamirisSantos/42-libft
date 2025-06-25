@@ -26,6 +26,24 @@ Esta biblioteca implementa funções divididas nas seguintes categorias:
 - Makefile para compilar a biblioteca (libft.a).
 - Os ficheiros *.c implementam as funções.
 
+## 🛠️ Compilação
+
+Para compilar a biblioteca, basta usar o `Makefile`:
+
+```bash
+make            # Compila libft.a
+make clean      # Remove os ficheiros objetos (.o)
+make fclean     # Remove os ficheiros objetos e libft.a
+make re         # Limpa e recompila tudo
+```
+## 📁 Estrutura do Projeto
+```bash
+libft/
+├── ft_*.c            # Implementações das funções
+├── libft.h           # Header com todas as declarações
+├── Makefile          # Para compilar a biblioteca
+└── libft.a           # Arquivo gerado com as funções compiladas criado via Makefile
+```
 ## 📝 Uso de FD (File Descriptor)
 Algumas funções como putstr_fd escrevem em ficheiros usando o número do descritor:
 
